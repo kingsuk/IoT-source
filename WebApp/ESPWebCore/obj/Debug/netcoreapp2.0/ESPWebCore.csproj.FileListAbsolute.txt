@@ -1,0 +1,24 @@
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.deps.json
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.runtimeconfig.json
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.runtimeconfig.dev.json
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.dll
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.pdb
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.csprojResolveAssemblyReference.cache
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.csproj.CoreCompileInputs.cache
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.AssemblyInfoInputs.cache
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.AssemblyInfo.cs
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.dll
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.pdb
+C:\Users\kingsuk\Documents\Visual Studio 2017\Projects\ESPWebCore\ESPWebCore\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.deps.json
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.runtimeconfig.json
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.runtimeconfig.dev.json
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.dll
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\bin\Debug\netcoreapp2.0\ESPWebCore.pdb
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.csprojResolveAssemblyReference.cache
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.csproj.CoreCompileInputs.cache
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.AssemblyInfoInputs.cache
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.AssemblyInfo.cs
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.dll
+C:\Users\kingsuk\Desktop\ESP\WebApp\ESPWebCore\obj\Debug\netcoreapp2.0\ESPWebCore.pdb
