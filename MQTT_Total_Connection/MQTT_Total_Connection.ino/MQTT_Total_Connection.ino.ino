@@ -26,8 +26,9 @@
 #include <WiFiManager.h>         //https://github.com/tzapu/WiFiManager
 // Update these with values suitable for your network.
 #include <ArduinoJson.h>
+#include <EEPROM.h>
 
-const char* mqtt_server = "139.59.32.194";
+const char* mqtt_server = "139.59.28.88";
 String topicName = "inTopic";
 String outTopicName = "outTopic";
 String device_id = "1002";
@@ -210,33 +211,23 @@ void loop() {
 
 void lightIndicator()
 {
+
+    for(int i=0;i<=10;i++)
+    {
+      if(i%2==0)
+      {
+        digitalWrite(indicatingLed,1);
+      }
+      else
+      {
+        digitalWrite(indicatingLed,0);
+      }
+      delay(200);
+    }
   
     
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);
-    delay(200);
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);
-    delay(200);
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);
-    delay(200);
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);
-    delay(200);
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);
-    delay(200);
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);
-    delay(200);
-    digitalWrite(indicatingLed,1);
-    delay(200);
-    digitalWrite(indicatingLed,0);  
+     
 }
+
+
+  
