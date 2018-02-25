@@ -26,7 +26,6 @@
 #include <WiFiManager.h>         //https://github.com/tzapu/WiFiManager
 // Update these with values suitable for your network.
 #include <ArduinoJson.h>
-#include <EEPROM.h>
 
 const char* mqtt_server = "139.59.28.88";
 String topicName = "inTopic";
