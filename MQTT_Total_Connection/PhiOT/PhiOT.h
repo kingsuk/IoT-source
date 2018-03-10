@@ -13,12 +13,19 @@ class PhiOT
 {
   public:
     PhiOT(String token);
-    void lightIndicator();
     void testPrivate();
-    void setup_wifi();
+    void Initialize();
     void phiLoop();
     void callback(char* topic, byte* payload, unsigned int length);
     void reconnect();
+    void mqttInit();
+    void CheckingConnectionStatusWithDelay();
+    void setAccessPoint();
+    void SwitchOffAccessPoint();
+    void ServerRouters();
+    void WifiConnectionSetup(String ssid, String password);
+    void lightIndicatorConfirmation();
+    void indicatorForAccessPoint();
   private:
     int _pin;
     String _token;
