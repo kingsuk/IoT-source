@@ -6,6 +6,8 @@
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
+#include <src/ArduinoJson/ArduinoJson.h>
+
 
 int indicatingLed=LED_BUILTIN;
 bool NetworkConnected = false;
@@ -45,7 +47,9 @@ PhiOT::PhiOT(String token)
   pinMode(indicatingLed, OUTPUT);
 }
 
-void PhiOT::Initialize() {
+void PhiOT::Initialize() 
+{
+    
 
   Serial.println("Checking if connection already availabe.");
   PhiOT::CheckingConnectionStatusWithDelay();
@@ -140,25 +144,48 @@ void PhiOT::mqttInit()
   //the callback function
   PhiOT::setCallback([this](char* topic, byte* payload, unsigned int length) {
   	  	PhiOT::Phicallback(topic, payload, length);
-        PhiOT::lightIndicatorConfirmation();
+        //PhiOT::lightIndicatorConfirmation();
 	});
 }
 
 void PhiOT::Phicallback(char* topic, byte* payload, unsigned int length) 
 {
+  char json[length];
   Serial.print("Message arrived [");
   Serial.print(topic);
   Serial.print("] ");
   for (int i = 0; i < length; i++) {
     Serial.print((char)payload[i]);
+    json[i] = (char)payload[i];
   }
   Serial.println();
+
+  StaticJsonBuffer<2000> jsonBuffer;
+ 
+  JsonArray& totalArray = jsonBuffer.parseArray(json);
+  if (!totalArray.success()) {
+    Serial.println("parseObject() failed");
+    return;
+  }
+  
+  JsonObject& totalObj = totalArray[0];
+  String header = totalObj["header"];
+
+  if(header == "data")
+  {
+    JsonArray& dataArr = totalObj["data"];
+    for(int i=0;i<dataArr.size(); i++)
+    {
+        JsonObject& data = dataArr[i];
+        pinMode(data["pin"], OUTPUT);
+        digitalWrite(data["pin"], data["value"]);
+    }
+  }
 
 }
 
 void PhiOT::reconnect() 
 {
-  delay(5000);
   int count = 0;
   while (!PhiOT::connected()) 
   {
@@ -192,6 +219,8 @@ void PhiOT::reconnect()
       }
     }
   }
+
+  
 
 }
 
